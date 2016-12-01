@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16B2548a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1il-MX-YJb" userLabel="Splash">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Partially Cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="Xws-W7-HXI">
+                                        <frame key="frameInset" minX="62" minY="247" width="253" height="134"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="253" id="CNn-f9-j3l"/>
+                                            <constraint firstAttribute="height" constant="134" id="lzV-lq-cFT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WeatherMe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4v7-qn-5E4">
+                                        <frame key="frameInset" minX="78" minY="389" width="221" height="55"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="40"/>
+                                        <color key="textColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.64313725489999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Xws-W7-HXI" firstAttribute="centerY" secondItem="1il-MX-YJb" secondAttribute="centerY" constant="-20" id="5ql-Zq-tPr"/>
+                                    <constraint firstItem="Xws-W7-HXI" firstAttribute="centerX" secondItem="1il-MX-YJb" secondAttribute="centerX" id="Hrs-qA-Hdb"/>
+                                    <constraint firstItem="4v7-qn-5E4" firstAttribute="top" secondItem="Xws-W7-HXI" secondAttribute="bottom" constant="8" id="OEG-gA-8Ym"/>
+                                    <constraint firstItem="4v7-qn-5E4" firstAttribute="centerX" secondItem="1il-MX-YJb" secondAttribute="centerX" id="mRr-zq-p8h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1il-MX-YJb" secondAttribute="bottom" id="T5L-rn-OWt"/>
+                            <constraint firstItem="1il-MX-YJb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="bMe-xS-eMg"/>
+                            <constraint firstItem="1il-MX-YJb" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="hcE-tj-ZpT"/>
+                            <constraint firstAttribute="trailing" secondItem="1il-MX-YJb" secondAttribute="trailing" id="wn6-L8-gQc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Partially Cloudy" width="92" height="72"/>
+    </resources>
+</document>
